@@ -1,8 +1,13 @@
 import Image from "next/image";
-import client from "@/utils/client";
-export default async function Project({ params }) {
-  const data = await client.getEntries({ content_type: "project" });
+import { createClient } from "contentful";
 
+export default async function Project({ params }) {
+  const client = createClient({
+    space: process.env.SPACE,
+    accessToken: process.env.TOKEN,
+  });
+
+  const data = await client.getEntries({ content_type: "project" });
   const filteredProjects = data.items.filter(
     (project) => project.fields.slug === params.slug
   );

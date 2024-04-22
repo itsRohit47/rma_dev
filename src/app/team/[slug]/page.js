@@ -1,7 +1,11 @@
-import client from "@/utils/client";
 import Image from "next/image";
+import { createClient } from "contentful";
 
 export default async function Project({ params }) {
+  const client = createClient({
+    space: process.env.SPACE,
+    accessToken: process.env.TOKEN,
+  });
   const data = await client.getEntries({ content_type: "teamMember" });
 
   const filteredMember = data.items.filter(
