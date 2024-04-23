@@ -11,7 +11,7 @@ export default async function TeamHome() {
   console.log(data.items);
 
   return (
-    <main className="p-2">
+    <main className="p-10">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
         {data.items.map((member) => {
           // console.log(member.fields.thumbnail.fields.file.url);
@@ -19,7 +19,7 @@ export default async function TeamHome() {
             <Link
               href={`/team/${member.fields.slug}`}
               key={member.sys.id}
-              className="group hover:shadow-md rounded-lg hover:cursor-pointer relative overflow-hidden"
+              className="group hover:shadow-md hover:cursor-pointer relative overflow-hidden"
             >
               <Image
                 src={"https:" + member.fields.thumbnail.fields.file.url}
