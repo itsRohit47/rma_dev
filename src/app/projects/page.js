@@ -1,10 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import client from "@/utils/client";
+import { createClient } from "contentful";
 
 export default async function ProjectsHome() {
+  const client = createClient({
+    space: process.env.SPACE,
+    accessToken: process.env.TOKEN,
+  });
   const data = await client.getEntries({ content_type: "project" });
-
   return (
     <main className="p-2">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">

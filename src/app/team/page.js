@@ -1,8 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import client from "@/utils/client";
+import { createClient } from "contentful";
 
-export default async function ProjectsHome() {
+export default async function TeamHome() {
+  const client = createClient({
+    space: process.env.SPACE,
+    accessToken: process.env.TOKEN,
+  });
   const data = await client.getEntries({ content_type: "teamMember" });
   console.log(data.items);
 
