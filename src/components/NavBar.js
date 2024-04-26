@@ -25,10 +25,8 @@ export default function Navbar() {
   return (
     <nav
       className={`${
-        scrolled
-          ? "bg-white shadow-2xl transition duration-300 text-gray-950 "
-          : "text-white"
-      } flex items-center justify-between  fixed w-full z-10 p-4`}
+        scrolled ? "backdrop-blur-sm transition duration-300" : ""
+      } flex items-center justify-between  fixed w-full z-10 p-4 text-white`}
     >
       <div className="w-52">
         <Link href="/">
