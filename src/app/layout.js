@@ -1,6 +1,6 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className="overflow-x-hidden ">
         <Navbar></Navbar>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

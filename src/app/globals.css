@@ -9,7 +9,6 @@ input[type="checkbox"] {
   height: 20px;
 }
 
-
 .submit-button:disabled {
   background-color: #666;
   color: #fff;

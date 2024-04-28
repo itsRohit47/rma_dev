@@ -17,7 +17,7 @@ export default function Card(props) {
 
       <div className="absolute w-full h-full bg-black group-hover:bg-red-800 opacity-20 group-hover:opacity-55 transition duration-300 inset-0"></div>
       <div className="text-white absolute inset-0 w-full h-full p-4">
-        <div className="font-Rma text-6xl text-center group-hover:scale-105 transition duration-300">
+        <div className="font-Rma text-5xl text-center group-hover:scale-105 transition duration-300">
           {props.title}
         </div>
         <div className="opacity-0 group-hover:opacity-100 transition duration-300 text-base text-center absolute top-1/2 -translate-y-1/2">

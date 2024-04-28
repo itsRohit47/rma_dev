@@ -11,7 +11,6 @@ export default function Careers() {
         btitle="APPLY FOR A JOB"
         img="bg-careers"
       ></Hero>
-      <Cta></Cta>
     </div>
   );
 }

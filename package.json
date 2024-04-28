@@ -17,6 +17,7 @@
     "react-fast-marquee": "^1.6.4"
   },
   "devDependencies": {
+    "@babel/parser": "^7.24.4",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
     "postcss": "^8",

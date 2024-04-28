@@ -8,15 +8,15 @@ export default function AboutusHome() {
         <div className="font-bold tracking-widest text-blue-500">ABOUT US</div>
         <br></br>
         <div className="font-Rma text-6xl tracking-wider">
-          Rooted in History, Backed by something
+          Rooted in History, Driven by the Future
         </div>
         <br></br>
         <div className="">
-          Excepteur sunt non eiusmod ullamco cupidatat deserunt proident sunt
-          sunt dolore consequat et. Cillum cillum do proident ad laboris.
-          Occaecat cillum laboris commodo mollit do labore aute eu deserunt
-          mollit duis eiusmod magna. Sint ad tempor reprehenderit eu mollit
-          laboris. Irure anim elit fugiat veniam minim aliquip.
+          RMA Civil is a civil construction company specialising in the full
+          range of civil infrastructure and electrical works across the
+          commercial, government and industrial sectors. With a commitment to
+          delivery excellence, we have built a reputation based on reliability
+          and a desire to achieve results.
         </div>
         <br></br>
         <div className="grid grid-cols-2 gap-4">
@@ -35,9 +35,9 @@ export default function AboutusHome() {
         </div>
         <br></br>
         <div className="flex flex-col gap-3 flex-wrap ">
-          <Button title="OUR STORY" to=""></Button>
-          <Button title="OUR VALUES" to=""></Button>
-          <Button title="OUR VISION" to=""></Button>
+          <Button title="OUR STORY" to="/about"></Button>
+          <Button title="OUR VALUES" to="/about"></Button>
+          <Button title="OUR VISION" to="/about"></Button>
         </div>
       </div>
       <div>

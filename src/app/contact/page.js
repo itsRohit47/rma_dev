@@ -51,7 +51,7 @@ export default function Contact() {
         {/* main */}
         <div className="grid grid-cols-1 md:grid-cols-2 p-52 gap-20" id="form">
           {/* form */}
-          <div className="">
+          <div className="shadow-xl p-4 border">
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <input
                 type="hidden"

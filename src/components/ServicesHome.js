@@ -41,7 +41,7 @@ export default function ServicesHome() {
           expertise and experience to deliver high-quality results.
           <br></br>
           <br></br>
-          <Button to="" title="FIND MORE"></Button>
+          <Button to="/services" title="FIND MORE"></Button>
         </div>
       </div>
       <br></br>
@@ -92,44 +92,44 @@ export default function ServicesHome() {
           <Card
             title="EARTHWORKS"
             img="earthworks.jpg"
-            to=""
+            to="/services#earthworks"
             des="We provide comprehensive earthworks services, including cut and fill, formation and batters, water retention basins, and more, to prepare your site for construction."
           ></Card>
           <Card
             title="DRAINAGE"
             img="drainage.jpeg"
             des="Our drainage services include stormwater management, culvert installation, sewer and water main construction, and more, to ensure efficient water flow and protection from erosion."
-            to=""
+            to="/services#drainage"
           ></Card>
           <Card
             title="ROADWORKS"
             img="roads.jpeg"
             des="We design and build roads, highways, and intersections, including pavement rehabilitation, retaining wall structures, and road safety improvements, to ensure safe and efficient transportation."
-            to=""
+            to="/services#roads"
           ></Card>
           <Card
             title="SUB DIVISIONS"
             img="subdivision.jpg"
             des="Our team develops residential, commercial, and industrial sub-divisions, including site preparation, road construction, and utilities installation, to create functional and sustainable communities."
-            to=""
+            to="/services#sub"
           ></Card>
           <Card
             title="RAILWAYS"
             img="rails.jpeg"
             des="We provide expertise in rail construction, including access tracks, station carparks, and combined service routes, to support the growth of rail transportation."
-            to=""
+            to="/services#rails"
           ></Card>
           <Card
             title="RECREATION FACILITIES"
             img="recreation.jpg"
             des="We design and build sports fields, shared user paths, playgrounds, and other recreational facilities, to create safe and enjoyable spaces for the community."
-            to=""
+            to="/services#recreation"
           ></Card>
           <Card
-            title="ELECTRICAL INFRA-STRUCTURE"
+            title="ELECTRICAL INFRASTRUCTURE"
             img="electrical.jpeg"
             des="Our team provides electrical infrastructure solutions, including trenching, conduit installation, cable hauling, and maintenance, to support the reliable transmission and distribution of electricity."
-            to=""
+            to="/services#electrical"
           ></Card>
         </div>
       </div>

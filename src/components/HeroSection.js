@@ -20,7 +20,7 @@ export default function HeroSection() {
         <br></br>
         <div className="flex gap-10 justify-start">
           <Button title="CAPABILITY STATEMENT" to=""></Button>
-          <Button title="ENQUIRE NOW" to=""></Button>
+          <Button title="ENQUIRE NOW" to="/contact"></Button>
         </div>
       </div>
     </div>

@@ -2,9 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Breadcrumb from "./BreadCrumbs";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -38,36 +40,59 @@ export default function Navbar() {
             height={350}
             className="object-cover"
           ></Image>
+          <p className="w-max">Home{pathname}</p>
         </Link>
       </div>
       <ul className="hidden md:flex items-center space-x-4 z-10 font-Rma text-xl ">
         <li>
-          <Link href="/services" className="hover:underline transition">
+          <Link
+            href="/services"
+            className={pathname == "/services" ? "border px-3 py-1" : ""}
+          >
             SERVICES
           </Link>
         </li>
         <li>
-          <Link href="/projects" className="hover:underline transition">
+          <Link
+            href="/projects"
+            className={pathname == "/projects" ? "border px-3 py-1" : ""}
+          >
             PROJECTS
           </Link>
         </li>
         <li>
-          <Link href="/about" className="hover:underline transition">
+          <Link
+            href="/about"
+            className={pathname == "/about" ? "border px-3 py-1" : ""}
+          >
             ABOUT
           </Link>
         </li>
         <li>
-          <Link href="/careers" className="hover:underline transition">
+          <Link
+            href="/team"
+            className={pathname == "/team" ? "border px-3 py-1" : ""}
+          >
+            TEAM
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/careers"
+            className={pathname == "/careers" ? "border px-3 py-1" : ""}
+          >
             CAREERS
           </Link>
         </li>
         <li>
-          <Link href="/contact" className="hover:underline transition">
+          <Link
+            href="/contact"
+            className={pathname == "/contact" ? "border px-3 py-1" : ""}
+          >
             CONTACT
           </Link>
         </li>
       </ul>
-      {/* <Breadcrumb></Breadcrumb> */}
     </nav>
   );
 }

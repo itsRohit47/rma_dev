@@ -8,10 +8,10 @@ export default async function FeaturedProjects() {
     accessToken: process.env.TOKEN,
   });
 
-  // const data = await client.getEntries({ content_type: "project" });
-  // const filteredProjects = data.items.filter(
-  //   (project) => project.fields.featured === true
-  // );
+  const data = await client.getEntries({ content_type: "project" });
+  const filteredProjects = data.items.filter(
+    (project) => project.fields.featured === true
+  );
 
   return (
     <div className="p-24">
@@ -34,25 +34,25 @@ export default async function FeaturedProjects() {
             efficiency, our projects make a lasting impact.
           </div>
           <br></br>
-          <Button to="/" title="VIEW ALL"></Button>
+          <Button to="/projects" title="VIEW ALL"></Button>
         </div>
       </div>
       <br></br>
       <br></br>
       <div className="relative">
-        {/* <div className="grid lg:grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 gap-4">
           {filteredProjects.map((project) => {
             return (
               <GridCard
                 key={project.sys.id}
                 title={project.fields.title}
                 img={project.fields.thumbnail.fields.file.url}
-                to=""
+                to={`/projects/${project.fields.slug}`}
                 loc={project.fields.location}
               ></GridCard>
             );
           })}
-        </div> */}
+        </div>
       </div>
     </div>
   );

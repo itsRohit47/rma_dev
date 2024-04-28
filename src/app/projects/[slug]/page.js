@@ -23,16 +23,16 @@ export default async function Project({ params }) {
             >
               <div className="flex flex-col gap-10">
                 <div>
-                  <p className="text-5xl font-normal">{project.fields.title}</p>
+                  <p className="text-6xl font-Rma">{project.fields.title}</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-sm mb-2 text-gray-700">
+                  <p className="font-Rma text-xl mb-2 text-blue-500">
                     CLIENT
                   </p>
                   <p className="font-normal">{project.fields.client}</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-sm mb-2 text-gray-700">
+                  <p className="font-Rma text-xl mb-2 text-blue-500">
                     LOCATION
                   </p>
                   <p className="font-normal">{project.fields.location}</p>
