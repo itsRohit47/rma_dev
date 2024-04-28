@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,12 +9,6 @@ input[type="checkbox"] {
   height: 20px;
 }
 
-.submit-button {
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
 
 .submit-button:disabled {
   background-color: #666;
@@ -28,4 +24,28 @@ input[type="checkbox"] {
 
 .submit-button.success {
   color: #fff;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.item {
+  width: 200px; /* Set the width of each item */
+  flex-shrink: 0;
+  scroll-snap-align: start;
 }

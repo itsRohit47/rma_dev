@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -13,8 +12,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="no-scrollbar scroll-smooth">
+      <body className="overflow-x-hidden ">
         <Navbar></Navbar>
         {children}
       </body>

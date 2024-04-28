@@ -8,9 +8,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        paralax: "url(/images/roads.jpeg)",
+        about: "url(/images/team.jpeg)",
+        team: "url(/images/team.jpeg)",
+        service: "url(/images/earthworks.jpg)",
+        project: "url(/images/rails.jpeg)",
+        careers: "url(/images/team.jpeg)",
+      },
+      fontFamily: {
+        Rma: ['"Jersey 25"', "sans-serif"],
       },
     },
   },

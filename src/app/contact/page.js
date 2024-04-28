@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import Cta from "@/components/cta";
+import Hero from "@/components/Hero";
+
 // main function export
 export default function Contact() {
   // function to handle the form submission
@@ -37,28 +39,19 @@ export default function Contact() {
   return (
     <main className="text-gray-950">
       <div>
-        {/* header */}
-        <div id="header" className="border relative h-96">
-          <Image
-            src="/images/team.jpeg"
-            alt="team image RMA"
-            width={2000}
-            height={2000}
-            className="h-full w-full object-cover absolute inset-0"
-          ></Image>
-          <div className="absolute h-full w-full bg-black inset-0 opacity-50 z-0"></div>
-          <div className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            <div className="text-4xl font-semibold">Contact our team</div>
-            <div className="">
-              Have any questions? Our team will get back to you as soon as we
-              can
-            </div>
-          </div>
-        </div>
+        <Hero
+          img="bg-team"
+          heading="CONTACT OUR TEAM"
+          subheading="Have any questions? Our team will get back to you as soon as we
+              can"
+          blink="#form"
+          btitle="SEND AN ENQUIRY"
+        ></Hero>
+
         {/* main */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 p-52 gap-20" id="form">
           {/* form */}
-          <div className="p-4 md:p-24">
+          <div className="">
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <input
                 type="hidden"
@@ -208,26 +201,31 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              <button type="submit" className="submit-button bg-blue-500">
-                Submit
+              <button
+                type="submit"
+                className="submit-button bg-white border-2 px-12 py-3 font-Rma text-xl"
+              >
+                SUBMIT
               </button>
             </form>
           </div>
           {/* additional info */}
-          <div className="p-4 md:p-24 flex flex-col gap-10">
+          <div className="flex flex-col gap-10">
             {/* call us */}
             <div className="flex flex-col gap-2">
-              <div className="text-lg font-semibold">Call Us</div>
+              <div className="text-2xl font-Rma tracking-widest w-max">
+                CALL US
+              </div>
               <div className="text-gray-600">
                 Call our team Mon-Fri from 9am to 5pm.
               </div>
-              <Link href="tel:0352922066" className="underline">
+              <Link href="tel:0352922066" className="underline w-max">
                 03 52 922 066
               </Link>
             </div>
             {/* visit us */}
             <div className="flex flex-col gap-2">
-              <div className="text-lg font-semibold">Visit Us</div>
+              <div className="text-2xl font-Rma tracking-widest">VISIT US</div>
               <div className="text-gray-600">
                 Chat to us in-person at our Geelong HQ.
               </div>
