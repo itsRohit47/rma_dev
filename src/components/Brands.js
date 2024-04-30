@@ -2,9 +2,9 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 export default function Brands() {
   return (
-    <div className=" bg-gray-100 w-screen grid grid-cols-3">
-      <div className="px-20 py-10 font-Rma text-xl tracking-widest">OUR CLIENTS INCLUDE</div>
-      <div className="col-span-2">
+    <div className=" bg-gray-100 w-screen grid lg:grid-cols-3">
+      <div className="p-4 lg:px-20 lg:py-10 font-Rma text-xl tracking-widest">OUR CLIENTS INCLUDE</div>
+      <div className="lg:col-span-2">
         <Marquee gradient={true} gradientColor="#f3f4f6">
           <Image
             src="/images/fh.svg"
