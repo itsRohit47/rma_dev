@@ -14,8 +14,8 @@ export default async function FeaturedProjects() {
   );
 
   return (
-    <div className="p-24">
-      <div className="grid grid-cols-2">
+    <div className="p-4 lg:p-24">
+      <div className="grid lg:grid-cols-2">
         <div className="">
           <div className="font-bold tracking-widest text-blue-500">
             PROJECTS
