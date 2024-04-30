@@ -16,7 +16,7 @@ module.exports = {
         careers: "url(/images/team.jpeg)",
       },
       fontFamily: {
-        Rma: ['"Jersey 25"', "sans-serif"],
+        Rma: ['"Archivo"', "sans-serif"],
       },
     },
   },
